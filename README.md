@@ -1,0 +1,2 @@
+# nanoColors
+Syntax highlight
