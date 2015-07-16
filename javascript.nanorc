@@ -1,0 +1,22 @@
+syntax "JavaScript" "\.js$"
+
+# Made by Jonathan G. Löwenstern
+# Thu Jul 16 15:53:32 ART 2015
+
+# Reserved words
+color cyan  "[[:<:]](break|case|catch|continue|default|delete|do|else|finally)[[:>:]]"
+color cyan  "[[:<:]](for|function|get|if|in|instanceof|new|return|set|switch)[[:>:]]"
+color cyan  "[[:<:]](switch|this|throw|try|typeof|var|void|while|with)[[:>:]]"
+# Data types and especials
+color brightgreen  "[[:<:]](null|undefined|NaN)[[:>:]]"
+color brightgreen "[[:<:]](true|false)[[:>:]]"
+color brightgreen     "[[:<:]](Array|Boolean|Date|Enumerator|Error|Function|Math)[[:>:]]"
+color brightgreen     "[[:<:]](Number|Object|RegExp|String)[[:>:]]"
+# Symbols
+color brightmagenta "[-+=<>!~%?:&|;\(\)\{\}\.$,]"
+# Numbers
+color brightblue "[0-9]"
+# Strings
+color brightyellow ""(\\.|[^"])*"|'(\\.|[^'])*'"
+# Comments
+color brightblack  "(/\*([^*]|(\*+[^*/]))*\*+/)|(//.*)"
